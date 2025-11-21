@@ -14,7 +14,7 @@ interface Card {
 const Card = ({ id, title, content, link, type, image }: Card) => {
   return (
     <li className='group relative flex flex-col items-center'>
-      <Image
+      <img
         className='relative z-10 mt-4 rounded-md w-auto h-[75px] max-w-[200px] object-contain'
         src={image}
         width={200}

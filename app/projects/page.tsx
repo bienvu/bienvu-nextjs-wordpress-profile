@@ -9,6 +9,7 @@ interface CardItem {
     url: string;
   };
   type: string[];
+  image: string;
 }
 
 const Page = async () => {

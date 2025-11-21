@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    domains: [
+      'www.sentius.com.au',
+      'upload.wikimedia.org',
+      'www.abaxis.com'
+      // add as many domains as you need
+    ],
     remotePatterns: [
       {
         protocol: "https",

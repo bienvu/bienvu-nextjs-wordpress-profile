@@ -2,10 +2,6 @@ import React from "react";
 import { timeLine } from "../data/data";
 
 interface TimeLineItem {
-  date: string;
-  title: string;
-  description: string;
-  link: string;
   date_time: string;
   position: string;
   content: string;

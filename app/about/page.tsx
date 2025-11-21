@@ -13,19 +13,25 @@ const Contact = async () => {
   // const pages = await req.json();
   // const page = pages[0];
   // const timelineData = page.acf.components[0].item;
-
   
+  // map external data shape to TimeLineItem expected by TimeLine component
+  const mappedTimelineData = timelineData.map((item: any) => ({
+    date_time: item.date_time,
+    position: item.position ?? item.company,
+    content: item.content,
+    company: item.company
+  }));
 
   return (
     <div className='flex flex-col items-center justify-between pt-20 pb-10'>
       <Intro />
+      <TimeLine timelineData={mappedTimelineData} />
       <TextHeader
-        title="Browser my work Experience"
+        title="Browse my work Experience"
         body="Detailed timeline showcasing my professional journey, highlighting key roles, achievements, and skills acquired throughout my career."
         align='text-left'
         link=''
       />
-      <TimeLine timelineData={timelineData} />
       <Gallery />
     </div>
   );

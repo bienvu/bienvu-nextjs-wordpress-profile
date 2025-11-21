@@ -18,12 +18,12 @@ export default function Home() {
           alt='ichigai'
         />
       </div>
-      <GridTools />
+      
       <h3
-        className={`box-title text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 text-center mb-6 mt-20`}>
+        className={`box-title text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 text-center mb-6`}>
         Connect with me!
       </h3>
-      <ul role='list text-center' className='max-w-md mx-auto mb-10 text-center grid grid-cols-1 sm:grid-cols-2 gap-4'>
+      <ul role='list text-center' className='max-w-md mx-auto mb-10 text-center grid grid-cols-1 sm:grid-cols-2 gap-4 mb-20'>
                 <li className='mt-4 flex'>
                   <a
                     target='_blank'
@@ -83,6 +83,8 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
+
+              <GridTools />
     </>
   );
 }
