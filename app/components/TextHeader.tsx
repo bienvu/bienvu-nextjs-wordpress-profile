@@ -24,7 +24,7 @@ const TextHeader = ({ title, body, align, link }: TextHeader) => {
       )}
       {link && (
         <Link className='button-gradient' href={link}>
-          {`Let's talk`}
+          {`About me!`}
         </Link>
       )}
     </div>

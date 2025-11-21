@@ -10,25 +10,23 @@ const Hero = () => {
         <div className='md:col-span-5'>
           <div className='md:me-5'>
             <span className='font-bold text-2xl dark:text-violet-100'>
-              A man is working as...
+              Hi there 👋 — I'm Bien!
             </span>
-            <h1 className='page-title text-left mb-5'>
+            <h1 className='page-title text-left mb-5 text-4xl'>
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500'>
-                Fullstack developer
+                A Fullstack developer
               </span>{" "}
               with{" "}
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500'>
-                Responsibility, Passion
+                12+ years of experience 
               </span>{" "}
-              and have a{" "}
+              of {" "}
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500'>
-                Big Dream.
+                Web Development!
               </span>
             </h1>
             <p className='text-normal'>
-              {`I love coding and creating better products and websites.
-              <br /> Let's work together on exciting projects, share ideas, and
-              achieve great things.`}
+              {`Skilled in React, Vue, Node.js, PHP, MySQL, MongoDB, and GraphQL, delivering fast and maintainable solutions. Experienced with Drupal, WordPress, Shopify, and cloud deployments. Strong in Git, CI/CD, UX/UI, Agile workflows, and mentoring. Passionate about problem-solving, continuous learning, and building high-quality digital experiences.`}
             </p>
             <Social />
           </div>
@@ -39,7 +37,7 @@ const Hero = () => {
             <Image
               src={HeroImage}
               width={675}
-              height={375}
+              height={475}
               className='h-auto w-auto rounded-lg mb-0'
               alt='Picture of the author'
             />

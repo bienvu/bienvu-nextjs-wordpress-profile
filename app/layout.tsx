@@ -4,8 +4,8 @@ import "./globals.css";
 import Root from "./components/Root";
 
 export const metadata: Metadata = {
-  title: "Bienvu Profile",
-  description: "Welcome to visit my profile",
+  title: "I'am Bien",
+  description: "Welcome to visit my profile!",
 };
 
 const RootApp = ({ children }: { children: React.ReactNode }) => {

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface Card {
   key: number;
@@ -7,28 +8,37 @@ interface Card {
   content: string;
   link: string;
   type: string[];
+  image: string;
 }
 
-const Card = ({ id, title, content, link, type }: Card) => {
+const Card = ({ id, title, content, link, type, image }: Card) => {
   return (
-    <li className='group relative flex flex-col items-start'>
+    <li className='group relative flex flex-col items-center'>
+      <img
+          className='relative z-10 mt-4 rounded-md w-auto h-[75px] max-w-[200px] object-contain'
+          src={image}
+          width={100}
+          height={100}
+          alt={title}
+        />
       <h2 className='mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100 uppercase'>
         <div className='absolute z-0 transition scale-95 bg-white  -inset-y-6 -inset-x-4 shadow-xl group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl'></div>
         <a target='_blank' href={link}>
           <span className='absolute inset-0 z-20'></span>
-          <span className='relative z-10 mr-2 border-slate-500 border-2 rounded-full inline-block text-center w-[28px]'>
+          {/* <span className='relative z-10 mr-2 border-slate-500 border-2 rounded-full inline-block text-center w-[28px]'>
             {id + 1}
           </span>
-          <span className='relative z-10'>{title}</span>
+          <span className='relative z-10'>{title}</span> */}
         </a>
       </h2>
+      
       <p
-        className='relative z-10 mt-5 text-small'
+        className='relative z-10  text-small'
         dangerouslySetInnerHTML={{
           __html: content,
         }}></p>
 
-      <div className='relative z-10 flex text-tiny mb-2'>
+      {/* <div className='relative z-10 flex text-tiny mb-2'>
         <svg
           viewBox='0 0 24 24'
           aria-hidden='true'
@@ -42,7 +52,7 @@ const Card = ({ id, title, content, link, type }: Card) => {
       <span className='relative z-10 text-tiny flex'>
         <span className='flex-none w-6 h-6 text-center'>#</span>
         <span className='ml-2'>{type.join(", ")}</span>
-      </span>
+      </span> */}
     </li>
   );
 };

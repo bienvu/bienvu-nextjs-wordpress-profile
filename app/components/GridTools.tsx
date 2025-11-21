@@ -18,9 +18,11 @@ import ts from "../assets/tools/ts.svg";
 import xd from "../assets/tools/xd.svg";
 import vite from "../assets/tools/vite.png";
 import shopify from "../assets/tools/shopify.png";
+import TextHeader from "./TextHeader";
 
 const GridTools = () => {
   return (
+    <div><TextHeader title="Focus on programming & tools" align='text-center' body='' link='' />
     <div className='flex justify-center mx-auto mt-4 mb-10 flex-wrap'>
       <div className='w-28 h-28 p-2 '>
         <Image
@@ -185,6 +187,7 @@ const GridTools = () => {
           alt='xd'
         />
       </div>
+    </div>
     </div>
   );
 };
