@@ -14,13 +14,13 @@ interface Card {
 const Card = ({ id, title, content, link, type, image }: Card) => {
   return (
     <li className='group relative flex flex-col items-center'>
-      <img
-          className='relative z-10 mt-4 rounded-md w-auto h-[75px] max-w-[200px] object-contain'
-          src={image}
-          width={100}
-          height={100}
-          alt={title}
-        />
+      <Image
+        className='relative z-10 mt-4 rounded-md w-auto h-[75px] max-w-[200px] object-contain'
+        src={image}
+        width={200}
+        height={75}
+        alt={title}
+      />
       <h2 className='mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100 uppercase'>
         <div className='absolute z-0 transition scale-95 bg-white  -inset-y-6 -inset-x-4 shadow-xl group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl'></div>
         <a target='_blank' href={link}>
